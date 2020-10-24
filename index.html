@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/jquery.csv.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/bouton.js"></script>
+		<script type='text/javascript' src='js/obs-websocket.js'></script>
+		<script> const obs = new OBSWebSocket();
+			obs.connect({ address: 'LAN_IP:4444', password: 'password' });</script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Obs control</a>
+                </div>
+            </div>
+        </nav>
+
+        <br/>
+ <div class="container">
+
+	<div class="col-sm-12">
+				<form id="BOUTTON01">
+					<div class="col-sm-12">
+						<h3></h3>
+					</div>
+					<div class="col-sm-12">
+						<label for="submitBouton" class="white-text">.</label>
+						<button type="submit" class="form-control btn btn-danger" id="submitBouton">BOUTON 1</button>
+					</div>
+				</form>
+				<form id="BOUTTON02">
+					<div class="col-sm-12">
+						<h3></h3>
+					</div>
+					<div class="col-sm-12">
+						<label for="submitBouton" class="white-text">.</label>
+						<button type="submit" class="form-control btn btn-success" id="submitBouton">BOUTON 2</button>
+					</div>
+				</form>
+	 </div> 		
+				 
+ </div> 
+
+
+
+    </body>
+</html>
